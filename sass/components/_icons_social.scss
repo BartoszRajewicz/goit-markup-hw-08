@@ -1,0 +1,19 @@
+.social__icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social__icon {
+  display: block;
+  padding: 12px;
+  border-radius: 50%;
+  transition: border $transitionValue;
+
+  &:hover,
+  &:focus {
+    fill: $white;
+    background-color: $elementBlueColor;
+    color: $iconFooterBackground;
+  }
+}
+

@@ -1,0 +1,38 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: $fontBlackColor;
+  font-size: 14px;
+  background-color: $white;
+}
+
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.button {
+  cursor: pointer;
+  border: none;
+  border-radius: $borderRadius;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
