@@ -17,5 +17,9 @@
     transition: $transitionValue;
   }
 
-  
+  &__toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
 }
