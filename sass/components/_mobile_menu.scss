@@ -21,5 +21,105 @@
     position: absolute;
     top: 10px;
     right: 15px;
+    color: $fontBlackColor;
+  }
+}
+
+.mobile-nav {
+  &__item {
+    margin-bottom: 36px;
+  }
+  &__link {
+    font-size: 40px;
+    font-weight: 500;
+
+    &--active {
+      color: $elementBlueColor;
+    }
+  }
+}
+
+.mobile-contacts {
+  &__item {
+    margin-bottom: 32px;
+    font-weight: 500;
+  }
+
+  &__phone {
+    font-size: 30px;
+    color: $elementBlueColor;
+  }
+
+  &__mail {
+    font-size: 24px;
+    color: $backgroundLightSection;
+  }
+}
+
+.mobile-socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 0;
+
+  &__item {
+    font-size: 18px;
+    font-weight: 500;
+    color: $elementBlueColor;
+    &--instagram,
+    &--facebook {
+      padding-right: 10px;
+      border-right: 1px solid $borderNavigationLine;
+    }
+
+    &--twitter,
+    &--linkedin {
+      padding-left: 10px;
+      padding-right: 30px;
+    }
+  }
+}
+
+@media (width > 367px) {
+  .mobile-socials__item {
+    &--twitter {
+      padding-right: 10px;
+      border-right: 1px solid $borderNavigationLine;
+    }
+
+    &--facebook {
+      padding-left: 10px;
+      padding-right: 20px;
+      border-right: none;
+    }
+
+    &--linkedin {
+      padding-left: 0;
+    }
+  }
+}
+
+@media (width > 468px) {
+  .mobile-socials__item {
+    &--facebook {
+      padding-left: 10px;
+      padding-right: 10px;
+      border-right: 1px solid $borderNavigationLine;
+    }
+
+    &--linkedin {
+      padding-left: 10px;
+    }
+  }
+}
+
+@media (width> 480px) {
+  .mobile-menu {
+    padding-left: 10vw;
+  }
+
+  .mobile-contacts {
+    &__phone {
+      font-size: 34px;
+    }
   }
 }
