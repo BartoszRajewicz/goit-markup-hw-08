@@ -1,11 +1,31 @@
-%flex-container{
-display: flex;
+%flex-container {
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-%flex-container-secondary{
-    display: flex;
+%flex-container-secondary {
+  display: flex;
   align-items: center;
   justify-content: center;
+}
+
+%menu-btn {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 22s;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  transition: $transitionValue;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    fill: $elementBlueColor;
+  }
 }
