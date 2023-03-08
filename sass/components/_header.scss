@@ -1,149 +1,73 @@
-.header {
+.navigation {
+  border-bottom: 1px solid $borderNavigationLine;
 
   &__wrapper {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-.navigation{
-  display: none;
-}
-
-@media (width >= 768px) {
-  .navigation-flex-container {
-    padding-top: 21px;
-    padding-bottom: 21px;
+    @extend %flex-container-secondary;
   }
 
-  .header {
-    &__menu-toggle {
-      display: none;
-    }
-  }
-
-  .navigation {
-    &__wrapper {
-      display: flex;
-      justify-content: space-between;
-    }
-    &-list {
-      height: 100%;
-      align-items: center;
-      gap: 60px;
+  &-list {
+    @extend %flex-container;
+    gap: 46px;
+    list-style: none;
+    margin-left: 93px;
+    &__item {
+      position: relative;
       font-weight: 500;
-      letter-spacing: 0.02em;
-      &__item {
-        position: relative;
-        &--active {
-          color: $elementBlueColor;
+      line-height: 1.17;
+      text-decoration: none;
+      color: $fontBlackColor;
+      transition: color $transitionValue;
 
-          &::after {
-            content: "";
-            position: absolute;
-            bottom: -33px;
-            left: 0;
-            width: 100%;
-            height: 4px;
-            border-radius: 2px;
-            background-color: $elementBlueColor;
-            pointer-events: none;
-          }
+      &:hover,
+      &:focus {
+        .navigation-contact__icon {
+          fill: $elementBlueColor;
+        }
+        color: $elementBlueColor;
+      }
+      &--active {
+        color: $elementBlueColor;
+
+        &::after {
+          content: " ";
+          position: absolute;
+          left: 0px;
+          bottom: -32px;
+          width: 100%;
+          height: 4px;
+          pointer-events: none;
+          border-radius: 2px;
+          background-color: $elementBlueColor;
         }
       }
     }
-    &-contact {
-      display: flex;
-      flex-direction: column;
-      margin-left: 1rem;
-      align-items: flex-start;
-      gap: 10px;
-      font-weight: 500;
+  }
+
+  &-contact {
+    @extend %flex-container-secondary;
+    gap: 50px;
+
+    &__item {
+      text-emphasis: none;
+      text-decoration: none;
+      color: $fontLightColor;
+      transition: color $transitionValue;
+    }
+
+    &__icon {
+      vertical-align: middle;
+      margin-right: 10px;
+      fill: $fontLightColor;
+      transition: fill $transitionValue;
+      &--align {
+        vertical-align: text-top;
+      }
     }
   }
 }
 
-@media (width >= 1200px) {
-  .navigation {
-    border-bottom: 1px solid $borderNavigationLine;
-    display: flex;
-
-    &__wrapper {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    &-list {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 46px;
-      list-style: none;
-      margin-left: 93px;
-      &__item {
-        position: relative;
-        font-weight: 500;
-        line-height: 1.17;
-        text-decoration: none;
-        color: $fontBlackColor;
-        transition: color $transitionValue;
-
-        &:hover,
-        &:focus {
-          .navigation-contact__icon {
-            fill: $elementBlueColor;
-          }
-          color: $elementBlueColor;
-        }
-        &--active {
-          color: $elementBlueColor;
-
-          &::after {
-            content: " ";
-            position: absolute;
-            left: 0px;
-            bottom: -32px;
-            width: 100%;
-            height: 4px;
-            pointer-events: none;
-            border-radius: 2px;
-            background-color: $elementBlueColor;
-          }
-        }
-      }
-    }
-
-    &-contact {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: row;
-
-      &__item {
-        text-emphasis: none;
-        text-decoration: none;
-        color: $fontLightColor;
-        transition: color $transitionValue;
-      }
-
-      &__icon {
-        vertical-align: middle;
-        margin-right: 10px;
-        fill: $fontLightColor;
-        transition: fill $transitionValue;
-        &--align {
-          vertical-align: text-top;
-        }
-      }
-    }
-  }
-
-  .navigation-flex-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 24px;
-    padding-bottom: 25px;
-  }
+.navigation-flex-container {
+  @extend %flex-container;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
