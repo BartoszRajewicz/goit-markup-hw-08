@@ -2,6 +2,54 @@
   background-color: $backgroundDarkSection;
 
   &__wrapper {
+    padding: 118px 58px;
+    background-image: linear-gradient(
+        $backgroundTransparent,
+        $backgroundTransparent
+      ),
+      url("../images/bg-hero.jpg");
+background-size: 480px 400px;
+background-position: center;
+  }
+
+  &__header {
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 1.62;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+  }
+  &__button {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+    &-item {
+      background-color: $elementBlueColor;
+      border: none;
+      color: $white;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      line-height: 1.88;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 200px;
+      height: 50px;
+      padding-top: 10px;
+      padding-right: 41px;
+      padding-bottom: 10px;
+      padding-left: 42px;
+    }
+  }
+}
+
+/*
+.hero {
+  background-color: $backgroundDarkSection;
+
+  &__wrapper {
     padding: 200px 0;
     margin: 0 auto;
     max-width: 1600px;
@@ -48,3 +96,4 @@
     }
   }
 }
+*/
