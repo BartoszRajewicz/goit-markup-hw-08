@@ -1,3 +1,41 @@
+
+.lorem-section {
+  padding-top: 60px;
+
+  &__list {
+    margin-bottom: 60px;
+    gap: 30px;
+  }
+
+  &__header {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+  }
+  &__paragraph {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-align: left;
+    display: block;
+    margin-bottom: 30px;
+    color: $fontLightColor;
+  }
+}
+
+.lorem-items {
+  padding: 25px 0;
+  text-align: center;
+  margin-bottom: 30px;
+  background-color: $backgroundLightSection;
+  border-radius: $borderRadius;
+}
+
+/*
 .lorem-section {
   padding-top: 94px;
 
@@ -31,3 +69,4 @@
   background-color: $backgroundLightSection;
   border-radius: $borderRadius;
 }
+*/
