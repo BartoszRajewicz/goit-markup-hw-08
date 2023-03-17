@@ -1,11 +1,12 @@
 .social__icons {
   display: flex;
+  justify-content: center;
   gap: 10px;
 }
 
 .social__icon {
   display: block;
-  padding: 12px;
+  padding: 10px;
   border-radius: 50%;
   transition: border $transitionValue;
 
