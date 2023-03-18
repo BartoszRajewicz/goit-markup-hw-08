@@ -20,10 +20,9 @@
   &__toggle {
     @extend %menu-btn;
     position: absolute;
-    vertical-align: text-top;
+    vertical-align: middle;
     top: 15px;
     right: 15px;
-    color: $fontBlackColor;
   }
 }
 
