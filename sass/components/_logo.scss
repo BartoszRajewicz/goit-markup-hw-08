@@ -1,7 +1,7 @@
 .logo {
   font-family: "Raleway", sans-serif;
   font-style: bold;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.19;
   color: $elementBlueColor;
   font-weight: 700;
@@ -10,7 +10,14 @@
   &__name {
     color: $fontBlackColor;
   }
-  &__name-footer{
+  &__name-footer {
     color: $white;
+  }
+}
+
+@media (width: 1200px) {
+  .logo {
+    margin-right: 93px;
+    font-size: 26px;
   }
 }
