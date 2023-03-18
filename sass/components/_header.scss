@@ -1,3 +1,30 @@
+.header {
+  padding: 16px 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation {
+  border-bottom: 1px solid $borderNavigationLine;
+
+  &-list {
+    display: none;
+  }
+
+  &-contact {
+    display: none;
+
+    &__item {
+      text-emphasis: none;
+      text-decoration: none;
+      color: $fontLightColor;
+      transition: color $transitionValue;
+    }
+  }
+}
+
+
+/*
 .navigation {
   border-bottom: 1px solid $borderNavigationLine;
 
@@ -71,3 +98,4 @@
   padding-top: 24px;
   padding-bottom: 25px;
 }
+*/
