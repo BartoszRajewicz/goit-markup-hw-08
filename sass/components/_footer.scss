@@ -34,8 +34,6 @@
 }
 
 .joinus {
-  padding-top: 60px;
-
   &__heading {
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -51,8 +49,6 @@
 }
 
 .newsletter {
-  padding-top: 0px;
-
   &__wrapper {
     gap: 12px;
   }
@@ -102,6 +98,39 @@
     margin-left: 24px;
     fill: $white;
     vertical-align: middle;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    &__wrapper {
+      padding: 60px;
+    }
+  }
+  .footer__subcontainer {
+    display: flex;
+    justify-content: space-between;
+
+    .joinus {
+      padding: 5px 13px;
+    }
+  }
+  .newsletter {
+    padding-bottom: 0px;
+
+    .newsletter__item {
+      width: 450px;
+    }
+  }
+}
+
+@media (max-width: 1200px), (min-width: 768px) {
+  .footer__subcontainer {
+    padding: 0 61px;
+  }
+
+  .newsletter__item {
+    margin: 0 auto 20px;
   }
 }
 
