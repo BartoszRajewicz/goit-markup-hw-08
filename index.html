@@ -219,7 +219,8 @@
           <ul class="team__list">
             <li>
               <figure class="team__member">
-                <img class="team__member-img"
+                <img
+                  class="team__member-img"
                   src="images/productdesigner.jpg"
                   alt="Product Designer"
                   width="270"
@@ -263,7 +264,8 @@
             </li>
             <li>
               <figure class="team__member">
-                <img class="team__member-img"
+                <img
+                  class="team__member-img"
                   src="images/frontenddeveloper.jpg"
                   alt="Frontend Developer"
                   width="270"
@@ -307,7 +309,8 @@
             </li>
             <li>
               <figure class="team__member">
-                <img class="team__member-img"
+                <img
+                  class="team__member-img"
                   src="images/img2.jpg"
                   alt="Marketing"
                   width="270"
@@ -353,7 +356,8 @@
             </li>
             <li>
               <figure class="team__member">
-                <img class="team__member-img"
+                <img
+                  class="team__member-img"
                   src="images/uidesigner.jpg"
                   alt="UI Desinger"
                   width="270"
@@ -455,54 +459,60 @@
     <!--Footer section-->
     <footer class="footer">
       <div class="container footer__wrapper">
-        <div>
-          <a href="index.html" class="link logo"
-            >Web<span class="logo__name-footer">Studio</span></a
-          >
-          <address class="footer__address">
-            m. Warszawa, Aleje Jerozolimskie 21
-            <a href="mailto:info@example.com" class="footer__address-contact"
-              >info@example.com</a
+        <div class="footer__subcontainer">
+          <div>
+            <a href="index.html" class="link logo"
+              >Web<span class="logo__name-footer">Studio</span></a
             >
-            <a href="tel:+48111111111" class="footer__address-contact"
-              >+48 111 111 111</a
-            >
-          </address>
+            <address class="footer__address">
+              m. Warszawa, Aleje Jerozolimskie 21
+              <a href="mailto:info@example.com" class="footer__address-contact"
+                >info@example.com</a
+              >
+              <a href="tel:+48111111111" class="footer__address-contact"
+                >+48 111 111 111</a
+              >
+            </address>
+          </div>
+          <div class="joinus section">
+            <h3 class="joinus__heading">Dołącz do nas</h3>
+            <ul class="social__icons">
+              <li>
+                <a href="#" class="joinus__social-icon social__icon">
+                  <svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="joinus__social-icon social__icon">
+                  <svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="joinus__social-icon social__icon">
+                  <svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="joinus__social-icon social__icon">
+                  <svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="joinus section">
-          <h3 class="joinus__heading">Dołącz do nas</h3>
-          <ul class="social__icons">
-            <li>
-              <a href="#" class="joinus__social-icon social__icon">
-                <svg width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram-2"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="joinus__social-icon social__icon">
-                <svg width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="joinus__social-icon social__icon">
-                <svg width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#" class="joinus__social-icon social__icon">
-                <svg width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin-1"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <form class="newsletter section" name="newsletter-signup" autocomplete="on">
+        <form
+          class="newsletter section"
+          name="newsletter-signup"
+          autocomplete="on"
+        >
           <label class="newsletter__label" for="newsletter-mail"
             >zapisz się do newslettera</label
           >
