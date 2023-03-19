@@ -15,10 +15,9 @@
     flex-wrap: wrap;
   }
 
-  &__item{
-     flex-basis: calc((100% - 30px) / 2);
+  &__item {
+    flex-basis: calc((100% - 30px) / 2);
   }
-  
 
   &__icon {
     display: block;
@@ -38,38 +37,23 @@
   }
 }
 
-
-
-/*
-client {
-  &__header {
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-align: center;
-    margin-bottom: 50px;
-  }
-
-  &__wrapper {
-    display: flex;
-    gap: 30px;
-  }
-
-  &__icon {
-    display: block;
-    padding: 16px 32px;
-    border: 1px solid $iconsInactive;
-    border-radius: $borderRadius;
-    fill: $iconsInactive;
-    transition: border $transitionValue;
-    transition: fill $transitionValue;
-
-    &:hover,
-    &:focus {
-      fill: $elementBlueColor;
-      border: 1px solid $elementBlueColor;
+@media (min-width: 768px) {
+  .client {
+    &__item {
+      flex-basis: calc((100% - 60px) / 3);
     }
   }
 }
-*/
+
+@media (min-width: 1200px) {
+  .client {
+    &__header {
+      margin-bottom: 50px;
+      font-size: 36px;
+    }
+    &__item {
+      flex-basis: calc((100% - 150px) / 6);
+    }
+  }
+}
+
