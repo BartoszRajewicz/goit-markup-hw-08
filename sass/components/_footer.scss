@@ -116,7 +116,7 @@
     }
   }
   .newsletter {
-    padding-bottom: 0px;
+    padding-bottom: 0;
 
     .newsletter__item {
       width: 450px;
@@ -129,8 +129,11 @@
     padding: 0 61px;
   }
 
-  .newsletter__item {
-    margin: 0 auto 20px;
+  .newsletter {
+    padding-top: 60px;
+    .newsletter__item {
+      margin: 0 auto 20px;
+    }
   }
 }
 
