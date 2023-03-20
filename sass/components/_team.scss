@@ -69,5 +69,17 @@
       flex-wrap: wrap;
       gap: 30px;
     }
+    &__items {
+      width: calc((100% - 30px) / 2);
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .team {
+    &__header {
+      margin-bottom: 50px;
+      font-size: 36px;
+    }
   }
 }
