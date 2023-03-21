@@ -1,155 +1,155 @@
 .header {
-  padding: 16px 15px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.navigation {
+  padding: 10px 0;
   border-bottom: 1px solid $borderNavigationLine;
 
-  &-list {
-    display: none;
+  &__content {
+    display: flex;
+    justify-content: space-between;
   }
 
-  &-contact {
+  &__desktop-menu {
     display: none;
-
-    &__item {
-      text-emphasis: none;
-      text-decoration: none;
-      color: $fontLightColor;
-      transition: color $transitionValue;
-    }
   }
 }
 
 @media (min-width: 768px) {
-  .header {
-    padding: 21px 0;
-  }
-
   .mobile-menu {
     &__toggle {
       display: none;
     }
   }
 
-  .navigation {
-    &-list {
+  .header {
+    padding: 21px 0;
+
+    &__desktop-menu {
+      display: flex;
+    }
+
+    .link {
+      transition: color $transitionValue;
+    }
+
+    .link:hover,
+    .link:focus {
+      color: $elementBlueColor;
+      fill: $elementBlueColor;
+    }
+  }
+  .nav {
+    &__list {
       height: 100%;
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 60px;
-
-      &__item {
-        position: relative;
-        font-weight: 500;
-        line-height: 1.17;
-        text-decoration: none;
-        color: $fontBlackColor;
-        transition: color $transitionValue;
-
-        &:hover,
-        &:focus {
-          .navigation-contact__icon {
-            fill: $elementBlueColor;
-          }
-          color: $elementBlueColor;
-        }
-        &--active {
-          color: $elementBlueColor;
-
-          &::after {
-            content: " ";
-            position: absolute;
-            left: 0px;
-            bottom: -32px;
-            width: 100%;
-            height: 4px;
-            pointer-events: none;
-            border-radius: 2px;
-            background-color: $elementBlueColor;
-          }
-        }
-      }
     }
-  }
-  
-}
 
-/*
-.navigation {
-  border-bottom: 1px solid $borderNavigationLine;
-
-  &__wrapper {
-    @extend %flex-container-secondary;
-  }
-
-  &-list {
-    @extend %flex-container;
-    gap: 46px;
-    list-style: none;
-    margin-left: 93px;
     &__item {
-      position: relative;
       font-weight: 500;
-      line-height: 1.17;
-      text-decoration: none;
-      color: $fontBlackColor;
-      transition: color $transitionValue;
+      letter-spacing: 0.02em;
+    }
 
-      &:hover,
-      &:focus {
-        .navigation-contact__icon {
-          fill: $elementBlueColor;
-        }
-        color: $elementBlueColor;
-      }
+    &__link {
+      color: $fontBlackColor;
+      position: relative;
+
       &--active {
         color: $elementBlueColor;
 
         &::after {
-          content: " ";
+          content: "";
           position: absolute;
-          left: 0px;
-          bottom: -32px;
+          bottom: -33px;
+          left: 0;
           width: 100%;
           height: 4px;
-          pointer-events: none;
           border-radius: 2px;
           background-color: $elementBlueColor;
+          pointer-events: none;
         }
       }
     }
   }
 
-  &-contact {
-    @extend %flex-container-secondary;
-    gap: 50px;
-
+  .contacts {
     &__item {
-      text-emphasis: none;
-      text-decoration: none;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.02em;
       color: $fontLightColor;
-      transition: color $transitionValue;
+    }
+
+    &__link {
+      color: $fontLightColor;
+      display: flex;
+      align-items: center;
     }
 
     &__icon {
-      vertical-align: middle;
-      margin-right: 10px;
-      fill: $fontLightColor;
-      transition: fill $transitionValue;
-      &--align {
-        vertical-align: text-top;
+      margin-right: 8px;
+
+      &--mail {
+        width: 14px;
+        height: 10px;
+      }
+
+      &--phone {
+        height: 14px;
       }
     }
   }
 }
 
-.navigation-flex-container {
-  @extend %flex-container;
-  padding-top: 24px;
-  padding-bottom: 25px;
+@media (1200px > width >= 768px) {
+  .contacts {
+    margin-left: 101px;
+
+    &__item:first-child {
+      margin-bottom: 10px;
+    }
+  }
 }
-*/
+
+@media (min-width: 1200px) {
+  .header {
+    padding: 25px 0;
+
+    &__content {
+      justify-content: initial;
+    }
+
+    &__desktop-menu {
+      flex-grow: 1;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  .nav__list {
+    gap: 46px;
+  }
+
+  .contacts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+
+    &__item {
+      font-size: 14px;
+    }
+
+    &__icon {
+      margin-right: 10px;
+
+      &--mail {
+        width: 16px;
+        height: 12px;
+      }
+
+      &--phone {
+        height: 16px;
+      }
+    }
+  }
+}
