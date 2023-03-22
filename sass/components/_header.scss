@@ -78,6 +78,7 @@
       font-weight: 500;
       letter-spacing: 0.02em;
       color: $fontLightColor;
+      fill: $fontLightColor;
     }
 
     &__link {
@@ -90,11 +91,13 @@
       margin-right: 8px;
 
       &--mail {
+        color: $fontLightColor;
         width: 14px;
         height: 10px;
       }
 
       &--phone {
+        color: $fontLightColor;
         height: 14px;
       }
     }
