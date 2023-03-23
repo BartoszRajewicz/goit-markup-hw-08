@@ -77,9 +77,8 @@
 
 @media (min-width: 1200px) {
   .team {
-    &__items {
-      margin: 0;
-      max-width: 270px;
+    &__list {
+      flex-wrap: nowrap;
     }
     &__header {
       margin-bottom: 50px;
