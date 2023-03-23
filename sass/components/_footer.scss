@@ -104,7 +104,7 @@
 @media (min-width: 768px) {
   .footer {
     &__wrapper {
-      padding: 60px;
+      padding: 60px 15px;
     }
   }
   .footer__subcontainer {
@@ -126,9 +126,7 @@
 }
 
 @media (max-width: 1200px), (min-width: 768px) {
-  .footer__subcontainer {
-    padding: 0 61px;
-  }
+
 
   .newsletter {
     .newsletter__item {
@@ -138,9 +136,9 @@
 }
 
 @media (min-width: 1200px) {
+
   .footer {
     &__wrapper {
-      padding-left: 0;
       display: flex;
       text-align: left;
     }
@@ -170,8 +168,6 @@
       }
       &__button {
         padding: 10px 24px 10px 42px;
-        width: 200px;
-        height: 50px;
       }
     }
   }
